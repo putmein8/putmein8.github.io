@@ -24,7 +24,6 @@ find_names = function() {
         }
     }
     //names = filter_names(names);
-    //console.log(names);
 
     //generate new html code to request input and trigger personalization
     var name_change_info = '<br> <label> For each name, enter its replacement or leave it blank for no change </label> <br>';
