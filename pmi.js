@@ -12,18 +12,19 @@ var name_span = male_names.concat(female_names);
 //generates input prompts/boxes for names in the story
 find_names = function() {
     //retrieve URL
-    var story = document.url_form.pasted_story.value;
+    full_story = document.url_form.pasted_story.value;
+
 
     names = [];
     for (i = 0; i < name_span.length; i++){
         name = name_span[i];
         lc_name = name.toLowerCase();
-        if(story.includes(name) || story.includes(lc_name)){
+        if(full_story.includes(name) || full_story.includes(lc_name)){
             names.push(name);
         }
     }
-
-    names = filter_names(names);
+    //names = filter_names(names);
+    //console.log(names);
 
     //generate new html code to request input and trigger personalization
     var name_change_info = '<br> <label> For each name, enter its replacement or leave it blank for no change </label> <br>';
@@ -43,20 +44,21 @@ filter_names = function(names){
     f_names = [];
 	names.sort((a, b) => a.length - b.length);
 
+
     for (i = 0; i < names.length; i++){
     	name = names[i]
     	for (j = i + 1; j < names.length; j++){
     		test_name = names[j];
-    		if(test_name.includes(name)){continue;}
+    		console.log(test_name);
+    		if(test_name.includes(name)){console.log(test_name); continue;}
     		f_names.push(name);
-
     	} 
     }
     return f_names;
 }
 
 //called directly from the web-page and substitutes replacements for corresponding names in the full_story string
-rename_me = function(story){
+rename_me = function(){
 
 	//grab replacement names from inputs
 	replacement_names = [];
@@ -71,8 +73,8 @@ rename_me = function(story){
 	for (i = 0; i < replacement_names.length; i++){
 		pre = names[i];
 		post = replacement_names[i];
-		pre_re = RegExp(pre, 'g');
-		full_story.replace(pre_re, post);
+		var pre_re = new RegExp(pre, "i");
+		full_story = full_story.replace(pre, post);
 	}
 
     document.getElementById("full_story").innerHTML = full_story;
