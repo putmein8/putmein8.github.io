@@ -1,27 +1,37 @@
 html{
-  margin: 1%;
-  background-color: #A6B8A6;
+  	margin: 1%;
+	background-color: #A6B8A6;
+	font-family: Verdana, sans-serif;
+
 }
 
 h1, h3{
-  font-family: Verdana, sans-serif;
   text-transform: uppercase;
   text-align: center;
-}
-
-p {
-  font-family: Verdana, sans-serif;
 }
 
 body{
 }
 
-.static_top{
 
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    height: 100px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: scroll;
 }
 
-.input{
 
+.center{
+	margin: 1% auto;
+    width: 90%;
+    padding: 10px;
+    background-color: #E6EBE6;
 }
 
 .selector_btn{
@@ -39,46 +49,56 @@ body{
 
 }
 
+/*Contains all input forms, no namechange*/
 .input_form{
-
+	height: 200px;
+	width: 94%;
+	align-self: center;
+	background-color: #E6EBE6;
 }
 
-.nc_form{
-	background-color: #D9F0E0;
-
+/*Button to run scraper or name-changer, makes nc_form appear*/
+.input_button{
+	background-color: #FF6321;
+	font-size: 20px;
+	padding: 8px 30px;
+	text-decoration: none;
+	border: none;
 }
 
-#story_form{
-	margin: 2%;
-	background-color: #D9F0E0;
-
-}
-
+/*Text box part of story_form, used as input when input_button clicked*/
 #story_in{
-	height: 160px;
-	margin: 2%;
+
 }
 
+/*Form which appears when Copy & Paste button clicked*/
+#story_form{
+
+}
+
+/*Form which appears when Scrape the Web button clicked*/
 #url_form{
 	margin: 2%;
-	background-color: #D9F0E0;
+	background-color: #E6EBE6;
+}
+
+/*Contains name_change form*/
+.nc_form{
+	background-color: #C2C6C3;
+
 }
 
 .story_presentation{
 
 }
 
-.disclaimer{
-
-}
 
 .footer {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: #EFEFEF;
   text-align: center;
   font-size: 12px;
 }

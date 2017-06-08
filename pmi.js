@@ -14,24 +14,27 @@ var name_span = male_names.concat(female_names);
 
 init_cap = function(){
 
-	//document.getElementById('story_form').style.height="200px";
-	//document.getElementById("story_form").innerHTML = '<input id="story_in" type="text" name="pasted_story" value="Paste story here..."/> <input type="button" value="Find names" onclick="find_names()"/>';
-	//document.getElementById("url_form").innerHTML = '';
 	document.getElementById("url_form").innerHTML = '';
-	document.getElementById("story_form").innerHTML = '<h1>Feature Coming Soon </h1>';
+	document.getElementById("nc_form").innerHTML = '';
+	document.getElementById("full_story").innerHTML = '';
+	document.getElementById('story_form').style.height="200px";
+	document.getElementById("story_form").innerHTML = '<textarea id="story_in" placeholder="Paste story here..."></textarea> <input type="button" class="input_button" value="Find names" onclick="find_names()"/>';
+
 }
 
 init_stw = function(){
 
 	document.getElementById("story_form").innerHTML = '';
+	document.getElementById("nc_form").innerHTML = '';
+	document.getElementById("full_story").innerHTML = '';
+	document.getElementById('story_form').style.height="0px";
 	document.getElementById("url_form").innerHTML = '<h1>Feature Coming Soon </h1>';
 
 }
 
 find_names = function() {
     //retrieve URL
-    full_story = document.url_form.pasted_story.value;
-
+    full_story = document.getElementById("story_in").value;
 
     names = [];
     for (i = 0; i < name_span.length; i++){
@@ -49,7 +52,7 @@ find_names = function() {
 		var new_nc_entry = '<label>' + names[i] + ': </label> <input type="text" id="name' + i + '" /> <br>';
 	    name_change_info += new_nc_entry;
 	}
-	name_change_info += '<br><input type="button" value="Personalize Story" onclick="rename_me()" />'
+	name_change_info += '<br><input type="button" class="input_button" value="Personalize Story" onclick="rename_me()" />'
 
 	//update the html document and reset the story
     document.getElementById("nc_form").innerHTML = name_change_info;
