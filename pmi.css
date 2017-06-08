@@ -1,150 +1,85 @@
-html, body {
-  margin: 0;
+html{
+  margin: 1%;
+  background-color: #A6B8A6;
 }
 
-h1, h2, a {
-  font-family: 'Oswald', sans-serif;
+h1, h3{
+  font-family: Verdana, sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 p {
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: Verdana, sans-serif;
 }
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
+body{
+	background-image: url("/images/ryos.JPG");
 }
 
-/* Main */
-.main {
-  text-align: center;
-  background: url("https://s3.amazonaws.com/codecademy-content/projects/move/bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 600px;
+.static_top{
+
 }
 
-.main .container {
-  position: relative;
-  top: 100px;
+.input{
+
 }
 
-.main h1 {
-  color: #fff;
-  margin: 0;
-  font-size: 150px;
+.selector_btn{
+	width: 49.5%;
+	background-color: #FF6321;
+	font-size: 20px;
+	padding: 8px 30px;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
 }
 
-.main p {
-  color: #fff;
-  margin: 0 0 20px 0;
-  font-size: 18px;
+.selector_btn:hover{
+		background-color: #FFFFFF;
+
 }
 
-.main .btn {
-  background-color: #1c1c1c;
-  color: #fff;
-  font-size: 18px;
-  padding: 8px 30px;
-  text-decoration: none;
-  display: inline-block;
+.input_form{
+
 }
 
-/* Supporting */
-.supporting {
-  background-color: #1c1c1c;
-  padding: 50px 0 80px;
-  text-align: center;
+.nc_form{
+	background-color: #D9F0E0;
+
 }
 
-.supporting .col {
-  float: left;
-  padding: 10px;
-  width: 28%;
+#story_form{
+	margin: 2%;
+	background-color: #D9F0E0;
+
 }
 
-.supporting h2 {
-  color: #ffa800;
-  font-size: 20px;
-  margin-bottom: 10px;
+#story_in{
+	height: 160px;
+	margin: 2%;
 }
 
-.clearfix {
-  clear: both;
+#url_form{
+	margin: 2%;
+	background-color: #D9F0E0;
 }
 
-.supporting p {
-  color: #efefef;
-  font-size: 12px;
-  line-height: 20px;
-  margin-bottom: 20px;
+.story_presentation{
+
 }
 
-.supporting .btn {
-  background-color: #eee;
-  color: #1c1c1c;
-  font-size: 18px;
-  padding: 8px 30px;
-  text-decoration: none;
-  display: inline-block;
+.disclaimer{
+
 }
 
-/* Feature */
-.feature {
-  background: url("https://s3.amazonaws.com/codecademy-content/projects/move/feature.jpg") no-repeat center center;
-  background-size: cover;
-  height: 600px;
-  text-align: center;
-}
-
-.feature .container {
-  position: relative;
-  top: 200px;
-}
-
-.feature h2 {
-  color: #fff;
-  font-size: 40px;
-  margin:0;
-  padding:50px 0 0;
-}
-
-/* Footer */
 .footer {
-  background: url("https://s3.amazonaws.com/codecademy-content/projects/move/footer.jpg") no-repeat center center;
-  background-size: cover;
-  height: 600px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
   text-align: center;
-}
-
-.footer .container {
-  position: relative;
-  top: 200px;
-}
-
-.footer h2 {
-  color: #fff;
-  font-size: 40px;
-  margin: 0 0 20px 0;
-  padding:50px 0 0;
-}
-
-.footer p {
-  color: #fff;
-  font-size: 18px;
-  margin: 0 0 20px 0;
-}
-
-.footer .btn {
-  background-color: #1c1c1c;
-  color: #fff;
-  font-size: 18px;
-  padding: 8px 30px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a.btn:hover {
-  background:#ffa800;
-  color:#000;
+  font-size: 12px;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Put Me In</title>
 		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="pmi.css">
@@ -16,37 +17,58 @@
 	</script>
 
 	<body>
-		<h1>Put me in, Coach!</h1>
-		<p>
-			Putmein.net is a website which allows users to insert their own names into a story. We currently only support copy/paste. In the next week, however, we will incorporate web scraping to allow users to easily manipulate any story they find online.
-		</p>
-		<form id="url_form" name="url_form">
-			<label>Paste story here: </label>
-		  	<input type="text" name="pasted_story" />
-		  	<input type="button" value="Find names" onclick="find_names()" />
-		</form>
 
-		<form id="nc_form" name="name_change_form">
-			<br>
+		<div class="static_top">
+			<h1>Put me in</h1>
+				<h3>Read your own story</h3>
+				<p>
+					PutMeIn is an engine that allows users to customize the names of the people involved in their favorite stories. Our proprietary algorithm identifies the names of characters in your story, and gives you the opportunity to change them. Based on your instructions, it generates an updated story with your very own cast of characters. Try it out!
+				</p>
+		</div>
+		
+		<br/>
 
-		</form>
+		<div class="input">
 
-		<div>
-			<p id="full_story">
+			<button type="button" class="selector_btn" onclick="init_cap()">C o p y &nbsp; &nbsp; &amp; &nbsp; &nbsp; P a s t e</button>
+			<button type="button" class="selector_btn" onclick="init_stw()">S c r a p e &nbsp; &nbsp; t h e &nbsp; &nbsp; W e b</button>
+
+
+			<container class="input_form">
+				<!--one or the other form is populated based on which button is selected-->
+				<form id="story_form" name="story_form">
 				
-			</p>
+				</form>
+				<form id="url_form" name="url_form">
+					
+				</form>
+			</container>
+
+			<container class="nc_form">
+				<form id="nc_form" name="name_change_form">
+
+				</form>
+			</container>
 
 		</div>
 
+		
+		<div class="story_presentation">
+			<h4 id="story_title"></h4>
+			<p id="full_story"></p>
+		</div>
 
-		<p>
-		© 2017 -- All rights reserved
-		</p>
+		<footer class="footer">
+			<p>
+				Disclaimer: It is the responsibility of users to avoid violating the rights of third-party content creators in their generation of new stories. We urge users to consider relevant copyright and DMCA laws before submitting text or claiming any altered content as their own.
+			</p>
+			<p>
+				Copyright © 2017 putmein.net
+			</p>
+
+		</footer>
+
 		<script src="pmi.js"></script>
 		
 	</body>
 </html>
-
-
-
-
