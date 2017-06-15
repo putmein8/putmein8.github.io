@@ -95,20 +95,23 @@
 			<section id="third" class="main">
 				<header>
 					<div class="container">
-							<form id="story_in">
-								<div class="row 100%">
-									<div class="6u 12u(mobile)"><textarea name="story_in" placeholder="Paste story here..."></textarea></div>
+						<form id="story_form">
+							<div class="row 100%">
+								<div class="6u 12u(mobile)"><textarea id="story_in" placeholder="Paste story here..."></textarea></div>
+							</div>
+							<div class="row 50%">
+								<div class="6u 12u(mobile)">
+								<input type="button" value="Find Names" onclick="find_names()"/>
 								</div>
-								<div class="row 50%">
-									<div class="6u 12u(mobile)">
-									<input type="button" value="Find Names" onclick="find_names()"/>
-									</div>
-								</div>
-							</form>
-						</div>
-					
+							</div>
+						</form>
+						<form id="nc_form">
+						</form>
+					</div>
 				</header>
-				
+				<section id="full_story">
+
+				</section>
 			</section>
 
 
@@ -152,27 +155,27 @@
 		<!-- Footer -->
 		<!-- Disclaimer, Copyright, Privacy Policy-->
 		<section id="footer">
-				<button id="myBtn">Disclaimer</button>
-				<div id="myModal" class="modal">
-				  <div class="modal-content">
-				    <div class="modal-header">
-				      <span class="close">&times;</span>
-				      <h2>Disclaimer</h2>
-				    </div>
-				    <div class="modal-body">
-				      	<p>
-				      		It is the responsibility of users to avoid violating the rights of third-party content creators in their generation of new stories. We urge users to consider relevant copyright and DMCA laws before submitting text or claiming any altered content as their own.
-			      		</p>
-				    </div>
-				  </div>
-				</div>
-				
-				<div class="copyright">
-					<ul class="menu">
-						<li>Copyright &copy; 2017 putmein.net</li>
-					</ul>
-				</div>
-			</section>
+			<button id="myBtn">Disclaimer</button>
+			<div id="myModal" class="modal">
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <span class="close">&times;</span>
+			      <h2>Disclaimer</h2>
+			    </div>
+			    <div class="modal-body">
+			      	<p>
+			      		It is the responsibility of users to avoid violating the rights of third-party content creators in their generation of new stories. We urge users to consider relevant copyright and DMCA laws before submitting text or claiming any altered content as their own.
+		      		</p>
+			    </div>
+			  </div>
+			</div>
+			
+			<div class="copyright">
+				<ul class="menu">
+					<li>Copyright &copy; 2017 putmein.net</li>
+				</ul>
+			</div>
+		</section>
 
 
 		<!-- Scripts -->
