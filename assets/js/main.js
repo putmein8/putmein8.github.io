@@ -16,6 +16,8 @@
 	});
 
 	find_names = function(){
+	    //document.getElementById("nc_form").innerHTML = '';
+	    names = []
 		//retrieve URL
 	    full_story = document.getElementById("story_in").value;
 	    for (i = 0; i < name_span.length; i++){
