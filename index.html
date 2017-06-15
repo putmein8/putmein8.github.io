@@ -5,7 +5,7 @@
 		<title>Put Me In</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/images/CrossedSwords.png" type="image/x-icon" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -15,6 +15,7 @@
 	<body>
 
 		<!-- Header -->
+		<!-- Welcome users to the site and present with inital options-->
 			<section id="header" class="dark">
 				<header>
 					<h1>Welcome to PutMeIn </h1>
@@ -31,6 +32,7 @@
 			</section>
 
 		<!-- First -->
+		<!-- Site description and small tutorial-->
 			<section id="first" class="main">
 				<header>
 					<div class="container">
@@ -46,40 +48,144 @@
 								<section>
 									<span class="feature-icon"><span class="icon fa-bolt"></span></span>
 									<header>
-										<h3>Identify names</h3>
+										<h3>Paste Your Story</h3>
 									</header>
-									<p>using our website</p>
+									<p align="left">
+										Once upon a time, Daniel and Jeremy went to the Bahamas. They saw dolphins do tailslides, were offered party drugs by taxi drivers, and even made a new friend, Zoe. Together, Daniel and Jeremy explored Nassau, but ultimately decided that starting a website would be the best use of their vacation.
+									</p>
 								</section>
 							</div>
 							<div class="4u 12u(narrow)">
 								<section>
 									<span class="feature-icon"><span class="icon fa-wheelchair-alt"></span></span>
 									<header>
-										<h3>Put in your own</h3>
+										<h3>Specify Name Changes</h3>
 									</header>
-									<p>by telling us which to replace</p>
+									<p>Daniel <i class="fa fa-arrow-right" aria-hidden="true"></i> Joe</p>
+									<p>Jeremy <i class="fa fa-arrow-right" aria-hidden="true"></i> Sam</p>
+									<p>Zoe <i class="fa fa-arrow-right" aria-hidden="true"></i> Nassim</p>
+
 								</section>
 							</div>
 							<div class="4u 12u(narrow)">
 								<section>
 									<span class="feature-icon"><span class="icon fa-thumbs-o-up"></span></span>
 									<header>
-										<h3>Create your story</h3>
+										<h3>Enjoy</h3>
 									</header>
-									<p>with the click of a button</p>
+									<p>
+										Once upon a time, Joe and Sam went to the Bahamas. They saw dolphins do tailslides, were offered party drugs by taxi drivers, and even made a new friend, Nassim. Together, Joe and Sam explored Nassau, but ultimately decided that starting a website would be the best use of their vacation.
+									</p>
 								</section>
 							</div>
 						</div>
 						<div class="row">
 							<div class="12u">
 								<footer>
-									<a href="#second" class="button scrolly">Get Started</a>
+									<a href="#third" class="button scrolly">Get Started</a>
 								</footer>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+
+		<!-- Third -->
+			<section id="third" class="main">
+				<header>
+					<div class="container">
+							<form id="story_in">
+								<div class="row 100%">
+									<div class="6u 12u(mobile)"><textarea name="story_in" placeholder="Paste story here..."></textarea></div>
+								</div>
+								<div class="row 50%">
+									<div class="6u 12u(mobile)">
+									<input type="button" value="Find Names" onclick="find_names()"/>
+									</div>
+								</div>
+							</form>
+						</div>
+					
+				</header>
+				
+			</section>
+
+
+		<!-- Fourth -->
+		<!-- Donate, Feedback-->
+			<section id="fourth" class="main">
+				<header>
+					<hr>
+					<div class="container">
+						<h2>Send Feedback</h2>
+						<p>
+							Did we miss a name? Do you want a new feature? Drop us a line and our  developers will jump right on it!
+						</p>
+					</div>
+				</header>
+
+				
+				<div class="content style4 featured">
+					<div class="container 75%">
+						<form method="post" action="mailto:putmein8@gmail.com">
+							<div class="row 50%">
+								<div class="6u 12u(mobile)"><input type="text" placeholder="Name" /></div>
+								<div class="6u 12u(mobile)"><input type="text" placeholder="Email" /></div>
+							</div>
+							<div class="row 50%">
+								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
+							</div>
+							<div class="row">
+								<div class="12u">
+									<ul class="actions">
+										<li><input type="submit" class="button" value="Send Message" /></li>
+										<li><input type="reset" class="button alt" value="Clear Form" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<!-- Disclaimer, Copyright, Privacy Policy-->
+		<section id="footer">
+				<button id="myBtn">Disclaimer</button>
+				<div id="myModal" class="modal">
+				  <div class="modal-content">
+				    <div class="modal-header">
+				      <span class="close">&times;</span>
+				      <h2>Disclaimer</h2>
+				    </div>
+				    <div class="modal-body">
+				      	<p>
+				      		It is the responsibility of users to avoid violating the rights of third-party content creators in their generation of new stories. We urge users to consider relevant copyright and DMCA laws before submitting text or claiming any altered content as their own.
+			      		</p>
+				    </div>
+				  </div>
+				</div>
+				
+				<div class="copyright">
+					<ul class="menu">
+						<li>Copyright &copy; 2017 putmein.net</li>
+					</ul>
+				</div>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
 
 		<!-- Second -->
 			<!-- <section id="second" class="main">
@@ -99,28 +205,10 @@
 
 -->
 
-		<!-- Third -->
-			<div align = center>
-			<section id="third" class="main">
-				<div class="content dark style3">
-					<div class="container">
-						<form id="story_in">
-							<div class="row 100%">
-								<div class="6u 12u(mobile)"><textarea name="story_in" placeholder="Paste story here..."></textarea></div>
-							</div>
-							<div class="row 50%">
-								<div class="6u 12u(mobile)">
-								<input type="button" value="Find Names" onclick="find_names()"/>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>	
-			</section>
+
 
 		<!-- Basic Elements -->
-		<!--
+		<!---
 			<section class="main">
 				<header>
 					<div class="container">
@@ -291,72 +379,10 @@
 			</section>
 		-->
 
-		<!-- Fourth -->
-			<section id="fourth" class="main">
-				<header>
-					<div class="container">
-						<h2>Send Feedback</h2>
-						<p>
-							Did we miss a name? Do you want a new feature? Drop us a line and our  developers will jump right on it!
-						</p>
-					</div>
-				</header>
 
-				
-				<div class="content style4 featured">
-					<div class="container 75%">
-						<form method="post" action="mailto:putmein8@gmail.com">
-							<div class="row 50%">
-								<div class="6u 12u(mobile)"><input type="text" placeholder="Name" /></div>
-								<div class="6u 12u(mobile)"><input type="text" placeholder="Email" /></div>
-							</div>
-							<div class="row 50%">
-								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
-							</div>
-							<div class="row">
-								<div class="12u">
-									<ul class="actions">
-										<li><input type="submit" class="button" value="Send Message" /></li>
-										<li><input type="reset" class="button alt" value="Clear Form" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
 
-		<!-- Footer -->
-		<section id="footer">
-				<button id="myBtn">Disclaimer</button>
-				<div id="myModal" class="modal">
-				  <div class="modal-content">
-				    <div class="modal-header">
-				      <span class="close">&times;</span>
-				      <h2>Disclaimer</h2>
-				    </div>
-				    <div class="modal-body">
-				      	<p>
-				      		It is the responsibility of users to avoid violating the rights of third-party content creators in their generation of new stories. We urge users to consider relevant copyright and DMCA laws before submitting text or claiming any altered content as their own.
-			      		</p>
-				    </div>
-				  </div>
-				</div>
-				
-				<div class="copyright">
-					<ul class="menu">
-						<li>Copyright &copy; 2017 putmein.net</li>
-					</ul>
-				</div>
-			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+
+
+

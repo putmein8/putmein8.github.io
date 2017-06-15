@@ -9,6 +9,9 @@
 		mobile: '(max-width: 736px)'
 	});
 
+	find_names = function(){
+		console.log('hi');
+	}
 
 	//modal stuff 
 
