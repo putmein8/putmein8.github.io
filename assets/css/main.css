@@ -1468,6 +1468,9 @@
 	}
 
 /* Sections/Article */
+pre{
+	white-space: pre-wrap;
+}
 
 	section,
 	article {
