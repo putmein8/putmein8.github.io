@@ -84,8 +84,8 @@
 		for (i = 0; i < replacement_names.length; i++){
 			pre = names[i];
 			post = replacement_names[i];
-			var pre_re = new RegExp(pre, "i");
-			full_story = full_story.replace(pre, post);
+			//var pre_re = new RegExp(pre, "i");
+			full_story = full_story.replace(new RegExp(pre, 'gi'), post);
 		}
 
 	    document.getElementById("full_story").innerHTML = full_story;
