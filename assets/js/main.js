@@ -23,14 +23,12 @@
 	    storylist = full_story.split(" ");
 	    for (i = 0; i < storylist.length; i++){
 	        var word = storylist[i];
-    		var namify = word.toLowerCase();
-    		var capName = namify.charAt(0).toUpperCase() + namify.slice(1);
-	        if(name_span.includes(capName) && !names.includes(capName)){
-	            names.push(capName);
+    		//var namify = word.toLowerCase();
+    		//var capName = namify.charAt(0).toUpperCase() + namify.slice(1);
+	        if(name_span.includes(word) && !names.includes(word)){
+	            names.push(word);
 	        }
 	    }
-	    console.log(names);
-
 	    //generate new html code to request input and trigger personalization
 	    var name_change_info = '<label> Enter replacements or leave blank for no change.</label>';
 		for (i = 0; i < names.length; i++) { 
