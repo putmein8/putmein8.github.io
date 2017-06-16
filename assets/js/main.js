@@ -25,7 +25,7 @@
 	        var word = storylist[i];
     		var namify = word.toLowerCase();
     		var capName = namify.charAt(0).toUpperCase() + namify.slice(1);
-	        if(name_span.includes(capName)){
+	        if(name_span.includes(capName) && !names.includes(capName)){
 	            names.push(capName);
 	        }
 	    }

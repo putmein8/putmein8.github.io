@@ -1486,6 +1486,10 @@
 		margin-bottom: 0;
 	}
 
+	section{
+		height: 100%;
+	}
+
 /* Image */
 
 	.image {
