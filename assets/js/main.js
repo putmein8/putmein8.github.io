@@ -27,7 +27,6 @@
     		var capName = namify.charAt(0).toUpperCase() + namify.slice(1);
 	        if(name_span.includes(capName)){
 	            names.push(capName);
-	            {break;}
 	        }
 	    }
 	    console.log(names);
@@ -39,11 +38,11 @@
 			name_change_info += new_nc_entry;
 		}
 		//name_change_info += '<footer><a class="button scrolly">Personalize Story</a></footer>';
-		name_change_info += '<br><input type="button" class="button_scrolly" value="Customize" onclick="rename_me()" />';
+		name_change_info += '<br><input type="button" class="button_scrolly" value="Personalize Story" onclick="rename_me()" />';
 
 		//update the html document and reset the story
 	    document.getElementById("nc_form").innerHTML = name_change_info;
-	    document.getElementById("story").innerHTML = '';
+	    document.getElementById("final_story").innerHTML = '';
 	    //document.getElementById("nc_proceed").innerHTML = '<a href="#story" class="button scrolly">Customize</a>';
 
 	}
@@ -91,7 +90,7 @@
 			full_story = full_story.replace(new RegExp(pre, 'gi'), post);
 		}
 
-	    document.getElementById("story").innerHTML = full_story;
+	    document.getElementById("final_story").innerHTML = full_story;
 	}
 
 	//modal stuff 
